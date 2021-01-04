@@ -54,8 +54,9 @@ const Page = () => {
             fData.append('cat', category);
 
             if(fileField.current.files.length > 0) {
-                for(let i=0; i>fileField.current.files.length; i++) {
+                for(let i=0; i<fileField.current.files.length; i++) {
                     fData.append('img', fileField.current.files[i]);
+                    console.log(`adicionando: ${i}`);
                 }
             }
 

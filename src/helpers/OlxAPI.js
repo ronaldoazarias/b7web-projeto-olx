@@ -143,7 +143,7 @@ const OlxAPI = {
 
     addAd: async (fData) => {
         const json = await apiFetchFile(
-            'ad/add',
+            '/ad/add',
             fData
         );
         return json;
